@@ -1,0 +1,301 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+:root{
+    --white:#f6e070f3;
+    --black:#000000e6;
+    --yellow:#e99d24f5;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+    background: var(--black);
+}
+
+nav h1{
+    font-size: xx-large;
+    color: white;
+    display: inline-block;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 7px;
+    margin: 7px;
+    border: 2px solid var(--yellow);
+    border-radius: 16px;
+
+}
+
+nav a{
+    text-decoration: none;
+    color:white;
+    padding: 6px;
+    font-size: larger;
+}
+
+nav ul li:hover{
+    background: var(--yellow);
+
+}
+
+nav button{
+    background-color: var(--yellow);
+    color:white;
+    padding: 12px;
+    font-size: larger;
+    border-radius: 12px;
+    border: none;
+}
+
+nav button:hover{
+        background-color: white;
+        color: var(--yellow);
+        border: 2px solid var(--yellow);
+}
+
+.body{
+    height: 80vh;
+    margin: 10px;
+    padding: 10px;
+}
+
+.body1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.body h1{
+    font-size: 100px;
+
+}
+
+.body img{
+    margin: 8% 0 0 4%;
+    height: 55vh;
+}
+
+  .body img:hover{
+    border-radius: 20px;
+    animation: example 5s linear infinite alternate;
+}
+  
+  @keyframes example {
+    from {background-color: red;
+    transform: rotate(180deg);}
+    to {background-color: yellow;}
+  }
+
+  .body button{
+    background-color: var(--yellow);
+    color:white;
+    padding: 16px;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 12px;
+    border: none;
+
+}
+
+.body button:hover{
+    background-color: white;
+    color: var(--yellow);
+    border: 2px solid var(--yellow);
+}
+
+.grid{
+    background-color:bisque;
+    padding: 7vh;
+
+}
+
+.grid-con {
+    display: grid;
+    gap: 10px 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+  }
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--yellow);
+    border-radius: 100px;
+}
+
+
+.grid-item h2{
+
+    text-align: center;
+}
+
+.grid-item span{
+    color: rgba(115, 18, 206, 0.936);
+}
+
+.se {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ser, .serv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    flex-wrap: wrap;
+    flex-shrink: 1;
+}
+
+.ser h1{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2vh;
+}
+
+.sapp{
+
+    margin: 6vh;
+}
+
+footer{
+    align-items: center;
+    text-align: center;
+    background-color: var(--yellow);
+}
+
+footer a{
+    text-decoration: none;
+    font-size: larger;
+}
+
+h2{
+    flex-wrap: wrap;
+    flex-shrink: 1;
+}
+
+.Home{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 450px) {
+
+
+    nav ul{
+        display: none;
+    }
+
+    .Home{
+        display: block !important;
+        height: 40px;
+        font-size: large;
+    }
+
+    .body1{
+        display: block;
+    }
+    .body1 h1{
+        font-size: 50px;
+        padding: 20px;
+        
+    }
+    .body1 img{
+        margin: 40px;
+        height: 40vh;
+        
+    }
+
+    .grid-con{
+        grid-template-columns: 1fr ;
+    }
+
+}
+    
+
+    
+@media (min-width: 451px) and (max-width: 700px) {
+
+    nav ul{
+        display: none;
+    }
+
+    .Home{
+        display: block !important;
+        height: 40px;
+        font-size: large;
+    }
+
+    .body1{
+        display: block;
+    }
+    .body1 h1{
+        font-size: 60px;
+        padding: 20px;
+        
+    }
+    .body1 img{
+        margin: 40px;
+        height: 40vh;
+        
+    }
+
+    .grid-con{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (min-width: 701px) and (max-width: 888px) {
+
+
+    .body1 h1{
+        font-size: 70px;
+        padding: 20px;
+        
+    }
+    .body1 img{
+        margin: 40px;
+        height: 40vh;
+        
+    }
+
+    .grid-con{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+    
+
+    
+
+
+
+
+
+  
